@@ -1,0 +1,392 @@
+/* Reset some default styles and set a basic layout */
+body, h1, h2, h3, p, ul {
+    margin: 10;
+    padding: 10;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: black;
+    line-height: 1.6;
+    color:white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    color:aquamarine;
+}
+header img {
+    border-radius: 50%;
+}
+
+
+.nav-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+    font-family: 'Times New Roman', Times, serif;
+    color: #a200ff;
+    font-size: 27px;
+
+}
+
+.nav {
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    transition: color 0.3s;
+}
+
+.nav-link.active {
+    color: whitesmoke; 
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #a200ff;
+}
+
+
+
+.header p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 20px;
+} 
+/* about section styles*/
+#About {
+    background-color: black;
+    padding: 40px;
+    text-align: justify;
+    color:grey;
+  }
+  
+  .about-me {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-me h2 {
+    font-size: 25px;
+    color: black;
+    text-align: left;
+  }
+  
+  .about-me img {
+    border-radius: 50%;
+    float: left;
+  }
+  
+  .about-me p {
+    font-size: 15px;
+    color: black;
+    margin: 10px 0;
+    text-align: justify;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .about-me {
+      padding: 10px;
+    }
+  
+    .about-me h2 {
+      font-size: 20px;
+      color: grey;
+    }
+  
+    .about-me img {
+      width: 100px;
+      height: 120px;
+      border-radius: 50%;
+    }
+  }
+  .about-me img:hover {
+    transform: rotate(360deg);
+  }
+
+
+/* Skills section styles */
+#Skills {
+    padding: 40px 0;
+    background-color: black;
+
+}
+#Skills h2 {
+    text-align: center;
+}
+#Skills .container {
+    display: flex;
+    flex-direction: column;
+}
+#Skills .container-item {
+    margin: 20px;
+    justify-content: space-around;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+
+
+}
+#Skills .container .container-item h3{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color:burlywood;
+    font-style: italic;
+
+
+}
+
+
+#Skills .container .container-item ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+#Skills .container-item li {
+    margin: 10px 0;
+}
+#Skills .container .container-item li img{
+    width: 60px;
+    height: 50px;
+    float:inherit;
+    border-radius: 50%;
+    box-shadow: rgb(24, 21, 21);
+}
+
+/* Style for h2 (Education) */
+#education h2 {
+    font-size: 24px;
+    color:aquamarine;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for h3 (University and Program) */
+  #education .container .expandable {
+    font-size: 15px;
+    color: #007BFF;
+    margin: 20px;
+    display:block;
+
+  }
+  
+  /* Style for p (Location and Date) */
+  #education .container p {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    align-items:baseline;;
+  }
+  
+  /* Style for the image */
+  #education .container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Style for the container */
+  #education .container {
+    background-color:black;
+    padding: 20px;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+  
+  /* Optional hover effect for the container */
+  #education .container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+/* Style for the "Projects" section */
+#projects {
+    background-color: black;
+    padding: 20px;
+  }
+  
+  /* Style for the "Projects" section heading (h2) */
+  #projects h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for project title (h3) */
+  .project h3 {
+    font-size: 18px;
+    color: #007acc;
+    margin-top: 0;
+  }
+  
+  /* Style for paragraphs within the project description (p) */
+  .project p {
+    font-size: 15px;
+    color: white;
+    line-height: 1.5;
+  }
+  
+  /* Style for the link (a) */
+  .project a {
+    text-decoration: none;
+    color: #007acc;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .project a:hover {
+    color: #0056b3;
+
+}
+/* Advanced styling for the experience section */
+#experience {
+    background-color:black;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    color: black;
+}
+#experience h2 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.experience-item {
+    background-color:white;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: 0.3s; 
+}
+
+.experience-item:hover {
+    transform: translateY(-5px); 
+}
+
+/* Interactive icons for the experience section */
+.experience-item h3::before {
+    content: "\2713"; 
+    color: black;
+    margin-right: 10px;
+}
+
+/* Animations for list items */
+.experience-item ul li {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.5s ease both;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Contact section styles */
+#contact h2  {
+    padding: 40px 0;
+    background-color: white;
+    color:black;
+
+
+}
+
+/* Advanced styling for the contact section */
+#contact {
+    background-color: darkgrey;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#contact.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+li a {
+    text-decoration: none;
+    color: #0077b5;
+    transition: color 0.3s;
+}
+
+/* On hover, change the color of links and list items */
+li:hover, li a:hover {
+    color: black;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 15px;
+}
